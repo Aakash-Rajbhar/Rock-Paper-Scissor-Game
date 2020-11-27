@@ -13,7 +13,7 @@ while (attempts<=10):
    value = str(input("Choose 'Rock' , 'Paper' or 'Scissor' : "))
    value = value.lower()
    computer = random.choice(values)
-
+#-------------Here the conditions part -------------------
    if value == 'r' and computer == 's':
         print(f"You win\nYou : {r} and computer : {s}") 
         your_score = your_score+1  
@@ -79,7 +79,7 @@ while (attempts<=10):
         print("Computer Score : ",computer_score)
         attempts = attempts+1
 
-
+#-----------------for invalid input-----------------------
    else :
        print("Invalid Input")
        print("Your Score : ",your_score)
